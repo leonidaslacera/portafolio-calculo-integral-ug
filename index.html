@@ -6,8 +6,93 @@
 </head>
 <body>
     <h1>Portafolio Digital – Cálculo Integral</h1>
-    <p>Universidad Digital</p>
-    <p>Estudiante: Leonidas Lacera</p>
+    <p>Universidad De Guayaquil</p>
+    <p>Estudiante: Leonidas Michael Lacera Asencio</p>
     <p>Portafolio web de la asignatura Cálculo Integral.</p>
+    <section>
+    <h2>Ejercicios Resueltos de Cálculo Integral</h2>
+
+    <h3>Ejercicio 1</h3>
+    <p><strong>Calcular la siguiente integral:</strong></p>
+    <p>∫ (3x²) dx</p>
+
+    <p><strong>Desarrollo:</strong></p>
+    <p>
+        Aplicamos la regla de la potencia:<br>
+        ∫ xⁿ dx = (xⁿ⁺¹)/(n+1) + C
+    </p>
+    <p>
+        ∫ 3x² dx = 3 · (x³ / 3) = x³ + C
+    </p>
+
+    <p><strong>Resultado:</strong></p>
+    <p>x³ + C</p>
+
+    <hr>
+
+    <h3>Ejercicio 2</h3>
+    <p><strong>Calcular la integral definida:</strong></p>
+    <p>∫<sub>0</sub><sup>2</sup> (2x) dx</p>
+
+    <p><strong>Desarrollo:</strong></p>
+    <p>
+        ∫ 2x dx = x²
+    </p>
+    <p>
+        Evaluamos en los límites:<br>
+        x² |<sub>0</sub><sup>2</sup> = 2² − 0² = 4
+    </p>
+
+    <p><strong>Resultado:</strong></p>
+    <p>4</p>
+
+    <hr>
+
+    <h3>Ejercicio 3 (Aplicación – Área bajo la curva)</h3>
+    <p><strong>Función:</strong> f(x) = x²</p>
+    <p><strong>Intervalo:</strong> [0, 2]</p>
+
+    <p><strong>Integral:</strong></p>
+    <p>∫<sub>0</sub><sup>2</sup> x² dx</p>
+
+    <p><strong>Desarrollo:</strong></p>
+    <p>
+        ∫ x² dx = x³ / 3
+    </p>
+    <p>
+        (2³ / 3) − (0³ / 3) = 8 / 3
+    </p>
+
+    <p><strong>Área bajo la curva:</strong></p>
+    <p>8/3 unidades cuadradas</p>
+</section>
+
+<section>
+    <h2>Gráficas de Funciones</h2>
+
+    <h3>Gráfica de la función f(x) = x²</h3>
+
+    <svg width="400" height="300" style="background:#f9f9f9; border:1px solid #ccc;">
+        <!-- Ejes -->
+        <line x1="50" y1="250" x2="350" y2="250" stroke="black"/>
+        <line x1="50" y1="50" x2="50" y2="250" stroke="black"/>
+
+        <!-- Curva x^2 -->
+        <path d="M50 250 Q150 200 250 150 T350 50"
+              fill="none" stroke="#003366" stroke-width="2"/>
+
+        <!-- Etiquetas -->
+        <text x="340" y="265">x</text>
+        <text x="30" y="60">y</text>
+        <text x="180" y="140">f(x)=x²</text>
+    </svg>
+
+    <p>
+        La gráfica representa la función cuadrática f(x)=x², utilizada para calcular áreas bajo la curva
+        mediante integrales definidas.
+    </p>
+</section>
+
 </body>
 </html>
+
