@@ -3,167 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <title>Portafolio - Cálculo Integral</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            line-height: 1.6;
+        }
+        #sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background-color: #003366;
+            color: #fff;
+            overflow-y: auto;
+            padding: 20px;
+            box-shadow: 3px 0 10px rgba(0,0,0,0.1);
+        }
+        #sidebar h2 {
+            color: #fff;
+            font-size: 18px;
+            margin-top: 0;
+        }
+        #sidebar a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin: 8px 0;
+            transition: color 0.3s;
+        }
+        #sidebar a:hover {
+            color: #ffd700;
+        }
+        #main {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #003366;
+        }
+        h1 { text-align: center; margin-bottom: 5px; }
+        section {
+            background: #fff;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 10px 0;
+        }
+        .icon-placeholder {
+            width: 400px;
+            height: 200px;
+            background: #e1ecf4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .icon-placeholder:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+        .icon-placeholder svg {
+            width: 80px;
+            height: 80px;
+            fill: #003366;
+        }
+        p {
+            margin: 8px 0;
+        }
+        hr {
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
-    <h1>Portafolio Digital – Cálculo Integral</h1>
-    <p>Universidad De Guayaquil</p>
-    <p>Ingeniero Milton Flores Zh. Mgs</p>
-    <p>Estudiante: Leonidas Michael Lacera Asencio</p>
-    <p>Portafolio web de la asignatura Cálculo Integral.</p>
-    <section>
-    <h2>Ejercicios Resueltos de Cálculo Integral</h2>
+    <div id="sidebar">
+        <h2>Portafolio Cálculo Integral</h2>
+        <strong>Ejercicios:</strong>
+        <a href="#ej1">Ejercicio 1</a>
+        <a href="#ej2">Ejercicio 2</a>
+        <a href="#ej3">Ejercicio 3</a>
+        <strong>Temario:</strong>
+        <a href="#t1">1. Derivada</a>
+        <a href="#t2">2. Modelos y errores</a>
+        <a href="#t3">3. Notación suma</a>
+        <a href="#t4">4. Áreas bajo la curva</a>
+        <a href="#t5">5. Integral definida</a>
+        <a href="#t6">6. Valor medio</a>
+        <a href="#t7">7. Teorema fundamental</a>
+        <a href="#t8">8. Sustitución</a>
+        <a href="#t9">9. Integración por partes</a>
+        <a href="#t10">10. Integrales trig</a>
+        <a href="#t11">11. Áreas entre curvas</a>
+        <a href="#t12">12. Volúmenes</a>
+        <a href="#t13">13. Longitud de arco</a>
+        <a href="#t14">14. Trabajo y energía</a>
+        <a href="#t15">15. Centro de masa</a>
+        <a href="#t16">16. Integrales impropias</a>
+        <a href="#t17">17. Economía</a>
+        <a href="#t18">18. Física</a>
+        <a href="#t19">19. Series</a>
+        <a href="#t20">20. Métodos numéricos</a>
+        <a href="#t21">21. Ingeniería</a>
+        <a href="#t22">22. Integrales múltiples</a>
+        <a href="#t23">23. Cambio de variables</a>
+        <a href="#t24">24. Aplicaciones avanzadas</a>
+    </div>
 
-    <h3>Ejercicio 1</h3>
-    <p><strong>Calcular la siguiente integral:</strong></p>
-    <p>∫ (3x²) dx</p>
+    <div id="main">
+        <h1>Portafolio Digital – Cálculo Integral</h1>
+        <p style="text-align:center;">Universidad de Guayaquil | Ing. Milton Flores Zh. Mgs</p>
+        <p style="text-align:center;">Estudiante: Leonidas Michael Lacera Asencio</p>
+        <p style="text-align:center;">Portafolio web de la asignatura Cálculo Integral</p>
 
-    <p><strong>Desarrollo:</strong></p>
-    <p>
-        Aplicamos la regla de la potencia:<br>
-        ∫ xⁿ dx = (xⁿ⁺¹)/(n+1) + C
-    </p>
-    <p>
-        ∫ 3x² dx = 3 · (x³ / 3) = x³ + C
-    </p>
+        <section id="ej1">
+            <h2>Ejercicios Resueltos de Cálculo Integral</h2>
+            <h3>Ejercicio 1</h3>
+            <p><strong>Calcular la integral:</strong> ∫ (3x²) dx</p>
+            <p><strong>Desarrollo:</strong> ∫ 3x² dx = x³ + C</p>
+            <p><strong>Resultado:</strong> x³ + C</p>
+        </section>
 
-    <p><strong>Resultado:</strong></p>
-    <p>x³ + C</p>
+        <section id="ej2">
+            <h3>Ejercicio 2</h3>
+            <p><strong>Integral definida:</strong> ∫<sub>0</sub><sup>2</sup> 2x dx = 4</p>
+        </section>
 
-    <hr>
+        <section id="ej3">
+            <h3>Ejercicio 3 (Área bajo la curva)</h3>
+            <p>f(x) = x², intervalo [0,2]</p>
+            <p>∫ x² dx = x³ /3 |<sub>0</sub><sup>2</sup> = 8/3</p>
+            <p><strong>Área:</strong> 8/3 unidades²</p>
+        </section>
 
-    <h3>Ejercicio 2</h3>
-    <p><strong>Calcular la integral definida:</strong></p>
-    <p>∫<sub>0</sub><sup>2</sup> (2x) dx</p>
+        <section id="t1">
+            <h2>Temario de Cálculo Integral</h2>
+            <h3 id="t1">1. La derivada de una función</h3>
+            <p>La derivada representa la razón de cambio instantánea de una función respecto a su variable independiente. Geométricamente, es la pendiente de la tangente. Permite analizar comportamiento local, máximos, mínimos y puntos de inflexión.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Tangent_to_a_curve.svg/512px-Tangent_to_a_curve.svg.png" alt="Derivada">
 
-    <p><strong>Desarrollo:</strong></p>
-    <p>
-        ∫ 2x dx = x²
-    </p>
-    <p>
-        Evaluamos en los límites:<br>
-        x² |<sub>0</sub><sup>2</sup> = 2² − 0² = 4
-    </p>
+            <h3 id="t2">2. Modelos basados en la derivada y análisis de errores</h3>
+            <p>Permite construir aproximaciones lineales de funciones y analizar el error entre valores reales y aproximaciones. Aplicable en ingeniería, física y economía.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Linear_approximation.svg" width="400">
 
-    <p><strong>Resultado:</strong></p>
-    <p>4</p>
+            <h3 id="t3">3. Notación suma (Σ)</h3>
+            <p>Representa sumas finitas de manera compacta. Es base para las sumas de Riemann y la definición de integrales.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Riemann_sum_concept.svg" width="400">
 
-    <hr>
+            <h3 id="t4">4. Áreas bajo la curva</h3>
+            <p>El área bajo una curva se calcula mediante integrales definidas y representa acumulación continua de cantidades.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Integral_as_region_under_curve.svg" width="400">
 
-    <h3>Ejercicio 3 (Aplicación – Área bajo la curva)</h3>
-    <p><strong>Función:</strong> f(x) = x²</p>
-    <p><strong>Intervalo:</strong> [0, 2]</p>
+            <h3 id="t5">5. Integral definida y sus propiedades</h3>
+            <p>Calcula el área neta sobre un intervalo. Cumple propiedades como linealidad y aditividad.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Definite_integral.svg" width="400">
 
-    <p><strong>Integral:</strong></p>
-    <p>∫<sub>0</sub><sup>2</sup> x² dx</p>
+            <h3 id="t6">6. Teorema del Valor Medio para integrales</h3>
+            <p>Existe al menos un punto en el intervalo donde la función toma su valor promedio, útil para física y estadística.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Mean_value_integral.svg" width="400">
 
-    <p><strong>Desarrollo:</strong></p>
-    <p>
-        ∫ x² dx = x³ / 3
-    </p>
-    <p>
-        (2³ / 3) − (0³ / 3) = 8 / 3
-    </p>
+            <h3 id="t7">7. Teorema Fundamental del Cálculo</h3>
+            <p>Relaciona derivadas e integrales como procesos inversos. Facilita el cálculo de áreas mediante antiderivadas.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Fundamental_theorem_of_calculus.svg" width="400">
 
-    <p><strong>Área bajo la curva:</strong></p>
-    <p>8/3 unidades cuadradas</p>
-</section>
+            <h3 id="t8">8. Método de sustitución</h3>
+            <p>Permite simplificar integrales complejas mediante cambio de variable.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/U_substitution_integral.svg" width="400">
 
-<section>
-    <h2>Gráficas de Funciones</h2>
+            <h3 id="t9">9. Integración por partes</h3>
+            <p>Integra productos de funciones usando la regla del producto inversa.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Integration_by_parts.svg" width="400">
 
-    <h3>Gráfica de la función f(x) = x²</h3>
+            <h3 id="t10">10. Integrales con potencias de seno y coseno</h3>
+            <p>Se aplican identidades trigonométricas para simplificar integrales con funciones trigonométricas elevadas a potencias.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Trig_integrals.svg" width="400">
 
-    <svg width="400" height="300" style="background:#f9f9f9; border:1px solid #ccc;">
-        <!-- Ejes -->
-        <line x1="50" y1="250" x2="350" y2="250" stroke="black"/>
-        <line x1="50" y1="50" x2="50" y2="250" stroke="black"/>
+            <h3 id="t11">11. Áreas entre curvas</h3>
+            <p>Se obtiene integrando la diferencia entre dos funciones, útil para problemas de geometría y física.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Area_between_curves.svg" width="400">
 
-        <!-- Curva x^2 -->
-        <path d="M50 250 Q150 200 250 150 T350 50"
-              fill="none" stroke="#003366" stroke-width="2"/>
+            <h3 id="t12">12. Volúmenes de revolución</h3>
+            <p>Calcula volúmenes al rotar una curva alrededor de un eje.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Solid_of_revolution.svg" width="400">
 
-        <!-- Etiquetas -->
-        <text x="340" y="265">x</text>
-        <text x="30" y="60">y</text>
-        <text x="180" y="140">f(x)=x²</text>
-    </svg>
+            <h3 id="t13">13. Longitud de arco</h3>
+            <p>Permite medir la longitud de una curva usando integrales.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Arc_length_curve.svg" width="400">
 
-    <p>
-        La gráfica representa la función cuadrática f(x)=x², utilizada para calcular áreas bajo la curva
-        mediante integrales definidas.
-    </p>
-</section>
-    <section>
-<h2>Temario de Cálculo Integral</h2>
+            <h3 id="t14">14. Trabajo y energía</h3>
+            <p>El trabajo realizado por una fuerza variable se calcula mediante integrales.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Work_integral.svg" width="400">
 
-<h3>1. La derivada de una función</h3>
-<p>La derivada representa la razón de cambio instantánea de una función respecto a su variable independiente y se interpreta geométricamente como la pendiente de la recta tangente.</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Tangent_to_a_curve.svg/512px-Tangent_to_a_curve.svg.png">
+            <h3 id="t15">15. Centro de masa</h3>
+            <p>Determina el punto de equilibrio de un cuerpo o región mediante integrales ponderadas.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Centroid_lamina.svg" width="400">
 
+            <h3 id="t16">16. Integrales impropias</h3>
+            <p>Se usan cuando los límites son infinitos o la función es discontinua, para calcular áreas y acumulaciones especiales.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Improper_integral.svg" width="400">
 
-<h3>2. Modelos basados en la derivada y análisis de errores</h3>
-<p>Las derivadas permiten construir modelos matemáticos aproximados y analizar el error entre valores reales y aproximaciones lineales.</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Linear_approximation.svg" width="400">
+            <h3 id="t17">17. Aplicaciones en economía</h3>
+            <p>Se utilizan para calcular costos, ingresos y utilidades acumuladas mediante integrales.</p>
+            <div class="icon-placeholder">
+                <svg viewBox="0 0 64 64">
+                    <path d="M2 62h60v-4H2v4zm0-12h60v-4H2v4zm0-12h60v-4H2v4zm0-12h60v-4H2v4zm0-12h60V10H2v4z"/>
+                </svg>
+            </div>
 
-<h3>3. Notación suma</h3>
-<p>La notación sigma se utiliza para representar sumas finitas y es fundamental para la definición de las sumas de Riemann.</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Riemann_sum_concept.svg" width="400">
+            <h3 id="t18">18. Integrales en física</h3>
+            <p>Se usan para calcular velocidad, aceleración, energía y trabajo de fuerzas variables.</p>
+            <div class="icon-placeholder">
+                <svg viewBox="0 0 64 64">
+                    <circle cx="32" cy="32" r="28" stroke="#003366" stroke-width="4" fill="none"/>
+                    <path d="M32 10v22l18 10" stroke="#003366" stroke-width="4" fill="none"/>
+                </svg>
+            </div>
 
-<h3>4. Áreas bajo la curva</h3>
-<p>El área bajo una curva se calcula mediante integrales definidas y representa una aplicación geométrica del cálculo integral.</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Integral_as_region_under_curve.svg" width="400">
+            <h3 id="t19">19. Series y sumas infinitas</h3>
+            <p>Relacionadas con integrales impropias y aproximaciones de funciones, base para Fourier y Taylor.</p>
+            <div class="icon-placeholder">
+                <svg viewBox="0 0 64 64">
+                    <text x="10" y="40" font-size="40" fill="#003366">Σ</text>
+                </svg>
+            </div>
 
-<h3>5. Integral definida y sus propiedades</h3>
-<p>La integral definida calcula el área neta en un intervalo y cumple propiedades como linealidad y aditividad.</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Definite_integral.svg" width="400">
+            <h3 id="t20">20. Métodos numéricos de integración</h3>
+            <p>Métodos como trapecio o Simpson para aproximar integrales de funciones complejas.</p>
+            <div class="icon-placeholder">
+                <svg viewBox="0 0 64 64">
+                    <rect x="10" y="10" width="44" height="44" stroke="#003366" stroke-width="4" fill="none"/>
+                    <path d="M10 54 L54 10" stroke="#003366" stroke-width="4"/>
+                </svg>
+            </div>
 
-<h3>6. Teorema del Valor Medio para integrales</h3>
-<p>Este teorema indica que existe un punto donde la función toma su valor promedio en el intervalo.</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Mean_value_integral.svg" width="400">
+            <h3 id="t21">21. Aplicaciones en ingeniería</h3>
+            <p>Integrales para estructuras, hidráulica, circuitos y control de procesos.</p>
+            <div class="icon-placeholder">
+                <svg viewBox="0 0 64 64">
+                    <rect x="12" y="12" width="40" height="40" fill="none" stroke="#003366" stroke-width="4"/>
+                    <path d="M12 32h40 M32 12v40" stroke="#003366" stroke-width="4"/>
+                </svg>
+            </div>
 
-<h3>7. Teorema Fundamental del Cálculo</h3>
-<p>Relaciona la derivada con la integral, mostrando que son procesos inversos.</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Fundamental_theorem_of_calculus.svg" width="400">
+            <h3 id="t22">22. Integrales múltiples</h3>
+            <p>Integrales dobles y triples para calcular volúmenes, superficies y centros de masa 3D.</p>
+            <div class="icon-placeholder">
+                <svg viewBox="0 0 64 64">
+                    <ellipse cx="32" cy="32" rx="20" ry="10" stroke="#003366" stroke-width="4" fill="none"/>
+                    <path d="M12 32c0 10 20 10 40 0" stroke="#003366" stroke-width="4"/>
+                </svg>
+            </div>
 
-<h3>8. Método de sustitución</h3>
-<p>Permite simplificar integrales mediante el cambio adecuado de variable.</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/U_substitution_integral.svg" width="400">
+            <h3 id="t23">23. Cambio de variables en integrales múltiples</h3>
+            <p>Usa coordenadas polares, cilíndricas o esféricas para simplificar integrales en 2D y 3D.</p>
+            <div class="icon-placeholder">
+                <svg viewBox="0 0 64 64">
+                    <circle cx="32" cy="32" r="20" stroke="#003366" stroke-width="4" fill="none"/>
+                    <line x1="32" y1="12" x2="32" y2="52" stroke="#003366" stroke-width="4"/>
+                </svg>
+            </div>
 
-<h3>9. Integración por partes</h3>
-<p>Se utiliza para integrar productos de funciones mediante una fórmula específica.</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Integration_by_parts.svg" width="400">
-
-<h3>10. Integrales con potencias de seno y coseno</h3>
-<p>Se aplican identidades trigonométricas para facilitar la integración.</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Trig_integrals.svg" width="400">
-
-<h3>11. Áreas entre curvas</h3>
-<p>El área entre dos curvas se obtiene integrando la diferencia de funciones.</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Area_between_curves.svg" width="400">
-
-<h3>12. Volúmenes de revolución</h3>
-<p>Permite calcular volúmenes de sólidos generados por rotación.</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Solid_of_revolution.svg" width="400">
-
-<h3>13. Longitud de arco</h3>
-<p>La longitud de una curva se calcula mediante una integral específica.</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Arc_length_curve.svg" width="400">
-
-<h3>14. Trabajo y energía</h3>
-<p>El trabajo realizado por una fuerza variable se obtiene mediante integrales definidas.</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Work_integral.svg" width="400">
-
-<h3>15. Centro de masa</h3>
-<p>Representa el punto de equilibrio de una región o cuerpo.</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Centroid_lamina.svg" width="400">
-
-<h3>16. Integrales impropias</h3>
-<p>Se utilizan cuando los límites son infinitos o la función es discontinua.</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Improper_integral.svg" width="400">
-
-</section>
-
-
+            <h3 id="t24">24. Aplicaciones avanzadas</h3>
+            <p>Flujo de fluidos, probabilidad, ecuaciones diferenciales y modelado matemático usando integrales.</p>
+            <div class="icon-placeholder">
+                <svg viewBox="0 0 64 64">
+                    <path d="M12 52 L32 12 L52 52 Z" stroke="#003366" stroke-width="4" fill="none"/>
+                </svg>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
-
